@@ -1,0 +1,101 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tourCal {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.day {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.day:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.current-day {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tournament-info {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day:hover .tournament-info {
+  display: block;
+}
+
+.tournament-day {
+  background-color: olive;
+  color: black;
+}
+#month-year {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.joun{
+  text-align: center;
+  color: olive;
+  font-size: 40px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .tourCal {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .calendar-container {
+    align-items: stretch;
+  }
+  
+  #calendar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  
+  .day {
+    padding: 5px;
+  }
+  
+  .tournament-info {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+  }
+  
+  .cb {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 90px;
+  }
+  
+  .add {
+    font-size: 40px;
+    padding-top: 50px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .cb {
+      font-size: 50px;
+      padding-top: 70px;
+    }
+    
+    .add {
+      font-size: 30px;
+      padding-top: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cb {
+      font-size: 40px;
+      padding-top: 50px;
+    }
+    
+    .add {
+      font-size: 24px;
+      padding-top: 30px;
+    }
+  }
+  
